@@ -27,6 +27,15 @@ div.centered {
 	margin: 0 auto;
 }
 
+div.space100 {
+	display: block;
+	height: 100px;
+}
+div.space25 {
+	display: block;
+	height: 25px;
+}
+
 .video-container {
 	position: relative;
 	width: 100%;
