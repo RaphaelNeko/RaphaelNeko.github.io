@@ -19,7 +19,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-body, input, button {
+body,
+input,
+button {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -31,6 +33,7 @@ button {
 	max-width: 960px;
 	width: 100%;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .overlay-dark {
@@ -55,7 +58,7 @@ button {
 	gap: 10px;
 
 	& .splitted {
-		max-width: 470px;
+		max-width: 460px;
 		width: 100%;
 		flex-shrink: 0;
 	}
@@ -70,6 +73,7 @@ button {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 10px;
+
 	& a {
 		width: 40px;
 		height: 40px;
