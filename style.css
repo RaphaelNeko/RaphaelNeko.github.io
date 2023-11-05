@@ -2,8 +2,8 @@
 :root {
 	--SBL-Purple: #692F93;
 	--SBL-Pink: #F475AA;
-	--SBL-Purple-Fade: #692F93aa;
-	--SBL-Pink-Fade: #F475AAaa;
+	--SBL-Purple-Fade: #692F93dd;
+	--SBL-Pink-Fade: #F475AAdd;
 }
 
 * {
@@ -106,11 +106,11 @@ nav {
 	right: 0;
 	z-index: 50;
 	box-shadow: #00000077 0 0 25px;
-	border-bottom: 2px #ffffff22 solid;
-	backdrop-filter: blur(5px);
+	border-bottom: 2px #00000022 solid;
+	backdrop-filter: blur(15px);
 
 	& .content {
-		mix-blend-mode: overlay;
+		/* mix-blend-mode: overlay; */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -172,9 +172,9 @@ nav {
 			position: relative;
 
 			&.logo img {
-				height: 60px;
-				margin-bottom: -10px;
-
+				filter: invert(1);
+				height: 50px;
+				padding: 12px 0 12px 3px;
 			}
 		}
 	}
