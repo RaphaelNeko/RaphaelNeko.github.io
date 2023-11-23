@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Raphael Neko 🐈 Music</title>
-	<meta property="og:title" content="Raphael Neko 🐈 Music">
-	<meta property="twitter:title" content="Raphael Neko 🐈 Music">
+	<title>Music | Raphael Neko 🐈</title>
+	<meta property="og:title" content="Music | Raphael Neko 🐈">
+	<meta property="twitter:title" content="Music | Raphael Neko 🐈">
 
 	<meta name="description"
 		content="Raphael Neko is a music composer, singer and game developer. Discover his world here!">
@@ -175,14 +175,33 @@
 
 	<div id="nav-load"></div>
 
-	<h1 style="text-align: center; text-transform: uppercase; padding: 17px 0 15px; font-family: 'Roboto', sans-serif; font-weight: 100;">Music</h1>
-
 	<header
-		style="background: center url(../assets/backgrounds/nekobackground.jpg); background-size: cover; position: relative; height: 81vh; display: flex; flex-direction: column; justify-content: center;">
-		<!-- <div class="overlay-dark opacity-50"></div> -->
-		<p class="content" style="position: inherit; text-align: center; font-size: 2.5rem; color: #000; font-weight: 900;">Hello there!</p>
-		<p class="content" style="position: inherit; text-align: center; font-size: 1.5rem; color: #000; font-weight: 900;">My website is currently in
-			maintenance, please come back later.</p>
+		style="background: center url(../assets/backgrounds/nekobackground.jpg); background-size: cover; position: relative; display: flex; flex-direction: column; justify-content: center;">
+		<div class="overlay-blur-5"></div>
+		<div class="overlay-dark opacity-75"></div>
+		<div class="content" style="position: relative; min-height: 500px; padding: 25px 10px;">
+			<div class="music-title">
+				<span class="material-symbols-outlined hidden" id="music-back-button"
+					onclick="closeAlbum()">arrow_back_ios_new</span>
+				<h1 style="padding-bottom: 25px;" id="music-title">Discography</h1>
+			</div>
+			<div id="album-info-container">
+				<div class="split-2" style="height: 100%;">
+					<div class="splitted">
+						<img id="info-coverart" src="https://i.scdn.co/image/ab67616d0000b2734897fc20c77706d6a222f644">
+						<p id="info-release">November 17, 2023</p>
+						<p id="info-tracks">12 tracks</p>
+					</div>
+					<div class="splitted">
+						<p style="text-align: center; font-size: 1.5rem; font-weight: 900; padding-bottom: 25px;">
+							Available on:
+						</p>
+						<div class="streaming-platforms" id="info-platforms"></div>
+					</div>
+				</div>
+			</div>
+			<div id="discography-container"></div>
+		</div>
 	</header>
 
 	<div id="footer-load"></div>
@@ -195,10 +214,115 @@
 						var loader = document.getElementById("loader");
 						loader.classList.add("hidden");
 						AOS.init();
+						generateAlbums();
 					});
 				});
-			}, 1000);
+			}, 250);
 		});
+
+		var musicjson;
+		let albumOpened = false;
+		const container = document.getElementById("discography-container");
+		const infoViewer = document.getElementById("album-info-container");
+		const backButton = document.getElementById("music-back-button");
+		const title = document.getElementById("music-title");
+		const infoCover = document.getElementById("info-coverart");
+		const infoRelease = document.getElementById("info-release");
+		const infoTracks = document.getElementById("info-tracks");
+		const infoLinksContainer = document.getElementById("info-platforms");
+
+		function openAlbum(id) {
+			const album = musicjson.releases[id];
+			backButton.classList.remove("hidden");
+			title.innerText = album.title;
+			infoCover.src = album.coverart;
+			infoRelease.innerText = `${album.releasedate}, ${album.releaseyear}`;
+			infoTracks.innerText = `${album.tracks} track`;
+			if (album.tracks > 1) infoTracks.innerText += 's';
+			infoLinksContainer.innerHTML = '';
+			for (let i = 0; i < album.links.length; i++) {
+				const link = album.links[i];
+				const newLink = document.createElement("a");
+				const platformIcon = document.createElement("i");
+				platformIcon.classList.add("fa-brands");
+				switch (link.platform) {
+					case "Spotify":
+						platformIcon.classList.add("fa-spotify");
+						break;
+					case "YouTube Music":
+						platformIcon.classList.add("fa-youtube");
+						break;
+					case "YouTube":
+						platformIcon.classList.add("fa-youtube");
+						break;
+					case "Apple Music":
+						platformIcon.classList.add("fa-itunes");
+						break;
+					case "Amazon Music":
+						platformIcon.classList.add("fa-amazon");
+						break;
+					case "Bandcamp":
+						platformIcon.classList.add("fa-bandcamp");
+						break;
+					case "Deezer":
+						platformIcon.classList.add("fa-deezer");
+						break;
+				}
+				const platform = document.createElement("p");
+				platform.innerText = link.platform;
+				newLink.appendChild(platformIcon);
+				newLink.appendChild(platform);
+				newLink.href = link.link;
+				newLink.target = "_blank";
+				infoLinksContainer.appendChild(newLink);
+			}
+			container.style.pointerEvents = "none";
+			container.style.opacity = 0;
+			infoViewer.style.pointerEvents = "all";
+			infoViewer.style.opacity = 1;
+		}
+
+		function closeAlbum() {
+			backButton.classList.add("hidden");
+			title.innerText = "Discography";
+			container.style.pointerEvents = "all";
+			container.style.opacity = 1;
+			infoViewer.style.pointerEvents = "none";
+			infoViewer.style.opacity = 0;
+		}
+
+		function generateAlbums() {
+			fetch('music.json').then((response) => response.json()).then((json) => {
+				musicjson = json;
+
+				for (let i = 0; i < json.releases.length; i++) {
+					const album = json.releases[i];
+					createAlbum(i, album.coverart, album.title, album.releaseyear);
+				}
+			});
+		}
+
+		function createAlbum(id, coverurl, albumname, releaseyear) {
+			const root = document.createElement("div");
+			root.classList.add("album");
+
+			const coverart = document.createElement("img");
+			coverart.src = coverurl;
+			root.appendChild(coverart);
+
+			const name = document.createElement("p");
+			const nameText = document.createTextNode(albumname);
+			const year = document.createElement("span");
+			const yearText = document.createTextNode(` • ${releaseyear}`);
+			name.appendChild(nameText);
+			year.appendChild(yearText);
+			name.appendChild(year);
+			root.appendChild(name);
+
+			root.onclick = function () { openAlbum(id) };
+
+			container.appendChild(root);
+		}
 	</script>
 </body>
 
