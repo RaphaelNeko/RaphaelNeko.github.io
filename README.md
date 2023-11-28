@@ -1,5 +1,5 @@
-# RaphaelNeko.github.io
+# Raphael Neko website
 
 **Welcome to Raphael Neko's website.**
 
-Please visit https://RaphaelNeko.github.io!
+Please visit https://raphaelneko.com!
