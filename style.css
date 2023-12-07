@@ -353,6 +353,32 @@ button {
 	}
 }
 
+.brandings {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.brandings .branding-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 350px;
+	min-height: 300px;
+	border-radius: 10px;
+	background: #222;
+	padding: 25px;
+	text-align: center;
+}
+
+.brandings .branding-container img {
+	width: 100%;
+}
+
+.brandings .branding-container a {
+	color: var(--SBL-Pink);
+}
+
 nav {
 	background: linear-gradient(90deg, var(--SBL-Pink-Fade), var(--SBL-Purple-Fade));
 	position: fixed;
