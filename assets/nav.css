@@ -1,0 +1,78 @@
+nav {
+	background: linear-gradient(90deg, var(--SBL-Pink-Fade), var(--SBL-Purple-Fade));
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	box-shadow: #00000077 0 0 25px;
+	border-bottom: 2px #00000022 solid;
+	backdrop-filter: blur(15px);
+}
+
+nav .content {
+	/* mix-blend-mode: overlay; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+nav .content a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	gap: 7.5px;
+	position: relative;
+}
+
+nav .content a.logo img {
+	filter: invert(1);
+	height: 50px;
+	padding: 12px 0 12px 3px;
+}
+
+nav .content .links {
+	display: flex;
+	gap: 25px;
+}
+
+nav .content .links a::after {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	height: 3px;
+	border-radius: 10px;
+	background: #fff;
+	opacity: 0;
+	transform: scaleX(0);
+	transition: all ease 150ms;
+}
+
+nav .content .links a:hover::after {
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+nav .content .links a:last-child {
+	background-color: #1111113d;
+	color: #fff;
+	border-radius: 100px;
+	padding: 4px 16px;
+	transition: all ease 250ms;
+}
+
+nav .content .links a:last-child::after {
+	display: none;
+}
+
+nav .content .links a:last-child:hover {
+	background-color: #fff;
+	color: #111;
+	gap: 15px;
+}
