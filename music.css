@@ -46,6 +46,7 @@
 	justify-content: center;
 	gap: 20px;
 	height: calc(100vh - 175px);
+	height: calc(100dvh - 175px);
 	overflow-y: scroll;
 	transition: all 150ms ease;
 }
@@ -96,6 +97,7 @@
 	left: 0;
 	right: 0;
 	height: calc(100vh - 175px);
+	height: calc(100dvh - 175px);
 	transition: all 150ms ease;
 	overflow-y: auto;
 	overflow-x: hidden;
