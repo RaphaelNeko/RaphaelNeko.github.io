@@ -209,19 +209,110 @@
 			<p>
 				This mod is purely visual, it doesn't modify any of the physic or gameplay. Neko Mod is fully free and open source, so feel free to look around this repo, fork it, or even contribute to the mod too!
 			</p>
+			<p>
+				<b><i>Please note that the custom heads sprites shown on my screenshots are not included with the mod! You must include your own sprite.</i></b>
+			</p>
 		</div>
 	</div>
 	
 	<div id="tutorial" class="content" style="padding: 50px 0; display: flex; flex-direction: column; gap: 30px;">
 		<p class="content" style="position: inherit; text-align: center; font-size: 2rem; font-weight: 900; text-shadow: 0 2px 5px #00000088; text-transform: uppercase;">How to install the mod</p>
 
-		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; gap: 10px;">	
-			<p>
-				The guide is still under creation. It will be up in a few hours!
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				1. Download the mod
 			</p>
 			<p>
-				But if you have a good knowledge into game modding already, feel free to try to figure this out, but I would recommend you to wait for the guide if you're scared to break anything.
+				Download the latest mod version zip.
 			</p>
+			<a href="https://github.com/RaphaelNeko/NekoModForVFurrika/releases/download/v1.0/VFurrika-NekoMod-v1.0.zip" target="_blank" class="cta-button">Download</a>
+		</div>
+
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				2. Extract to the game's folder
+			</p>
+			<p>
+				Open the game's folder (see the gif below for how to find the folder through Steam).
+			</p>
+			<img src="assets/vfurrika/howto-openfolder.gif" alt="Click the settings button, then in the Manage sub menu click Browse local files." style="max-width: 100%; border-radius: 10px;">
+			<p><br></p>
+			<p>
+				Extract all the content of the zip to the game's folder.
+			</p>
+			<img src="assets/vfurrika/howto-extractmod.gif" alt="Drag all the files in the zip into the game's folder." style="max-width: 100%; border-radius: 10px;">
+		</div>
+		
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				3. Check if the mod works
+			</p>
+			<p>
+				If you launch the game and you see the Neko Mod button on the title screen, your game is now patched! 🎉
+			</p>
+			<img src="assets/vfurrika/title-mod.jpg" style="max-width: 100%; border-radius: 10px;">
+		</div>
+
+		<p class="content" style="position: inherit; text-align: center; font-size: 2rem; font-weight: 900; text-shadow: 0 2px 5px #00000088; text-transform: uppercase;">How to set up custom heads</p>
+
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				1. Open the custom heads folder
+			</p>
+			<p>
+				You can open the custom heads folder at any time directly through the Neko Mod Menu.
+			</p>
+			<div class="split-2">
+				<img class="splited" src="assets/vfurrika/nekomod-menu.jpg" style="max-width: 400px; border-radius: 10px;">
+				<img class="splited" src="assets/vfurrika/customheads-folder-base.jpg" style="max-width: 400px; border-radius: 3px;">
+			</div>
+		</div>
+
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				2. Put your custom sprites there
+			</p>
+			<p><br></p>
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				CUSTOM SPRITE RULES
+			</p>
+			<ul>
+				<li>Your custom sprite <b>must approximately match the base sprite sizes</b> since custom sprites doesn't edit the actual collision shapes in-game. <i>(You can find all the base sprites in the Backup folder if needed)</i></li>
+				<li>All your sprites must be in <b>".png"</b> format.</li>
+				<li>
+					All the sprites must be named from 0 to 10.
+					<br>Example:<br>
+					<img src="assets/vfurrika/customheader-folder-filesexample.jpg" style="max-width: 100%; border-radius: 10px;">
+				</li>
+				<li>The mod works even if you just replace a few sprites. It only replaces the game's sprites if the sprite file is existing in the Custom Heads folder.</li>
+			</ul>
+		</div>
+		
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				3. Relaunch the game, and see the result
+			</p>
+			<p>
+				If you see your custom head sprites directly on the title screen, everything works. Congratulations!
+			</p>
+			<img src="assets/vfurrika/example-1.jpg" style="max-width: 500px; border-radius: 10px;">
+		</div>
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				If the custom sprites doesn't display properly (too small or too big), or they don't appear at all, please make sure you followed the custom sprite rules on the previous step.
+			</p>
+			<p>
+				If you found a bug, or have any issue with setting up the mod, don't hesitate to contact me!
+			</p>
+			<p>
+				You can find all my socials in the footer down below.
+			</p>
+		</div>
+		<div style="background: #00000088; padding: 25px 40px; border-radius: 15px; display: flex; flex-direction: column; align-items: start; gap: 10px;">
+			<p style="font-weight: 900; font-size: 1.3rem;">
+				Have fun! 🐈💜
+			</p>
+			<p>/ Raphael Neko</p>
 		</div>
 	</div>
 
