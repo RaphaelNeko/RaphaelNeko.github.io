@@ -1,6 +1,77 @@
 {
 	"releases": [
 		{
+			"title": "What We Found",
+			"releasedate": "January 23",
+			"releaseyear": "2024",
+			"coverart": "https://i.scdn.co/image/ab67616d0000b273c8033bc1ce2748f312ae29ed",
+			"tracks": 1,
+			"links": [
+				{
+					"platform": "Spotify",
+					"link": "https://open.spotify.com/album/1X70QuXWJytFQqIemuBPek"
+				},
+				{
+					"platform": "YouTube Music",
+					"link": "https://music.youtube.com/playlist?list=OLAK5uy_mdwmA9erz8v1C-UF3arRib946QaePXftU"
+				},
+				{
+					"platform": "Deezer",
+					"link": "https://www.deezer.com/album/537877232"
+				}
+			]
+		},
+		{
+			"title": "Without a Good Bye",
+			"releasedate": "January 22",
+			"releaseyear": "2024",
+			"coverart": "https://i.scdn.co/image/ab67616d0000b27305a9990ba4bafb3e7fcbede0",
+			"tracks": 1,
+			"links": [
+				{
+					"platform": "Spotify",
+					"link": "https://open.spotify.com/album/2iOC5XyJvH2j39SPXeobjY"
+				},
+				{
+					"platform": "YouTube Music",
+					"link": "https://music.youtube.com/playlist?list=OLAK5uy_nIw4uLYSi_ee0xTXsrc8ALmAjtAwgeYuY"
+				},
+				{
+					"platform": "Deezer",
+					"link": "https://www.deezer.com/album/537865202"
+				}
+			]
+		},
+		{
+			"title": "chill collection, vol. 2",
+			"releasedate": "January 18",
+			"releaseyear": "2024",
+			"coverart": "https://i.scdn.co/image/ab67616d0000b27388ff1dec058046d8c3a19c61",
+			"tracks": 4,
+			"links": [
+				{
+					"platform": "Spotify",
+					"link": "https://open.spotify.com/album/7gcRXV0rmXCCArGtKpmrTL"
+				},
+				{
+					"platform": "YouTube Music",
+					"link": "https://music.youtube.com/playlist?list=OLAK5uy_lUX-boDZYkbZtAdbOj6PL_g8Aj_21Wwtg"
+				},
+				{
+					"platform": "Apple Music",
+					"link": "https://music.apple.com/album/chill-collection-vol-2-ep/1726753114"
+				},
+				{
+					"platform": "Amazon Music",
+					"link": "https://music.amazon.co.jp/albums/B0CSSKNQTG"
+				},
+				{
+					"platform": "Deezer",
+					"link": "https://www.deezer.com/album/536396562"
+				}
+			]
+		},
+		{
 			"title": "UNIVERSE (The Beginning)",
 			"releasedate": "November 17",
 			"releaseyear": "2023",
