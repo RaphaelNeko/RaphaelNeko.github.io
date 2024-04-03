@@ -209,7 +209,10 @@
 				</p>
 			</div>
 			<div class="splitted" style="display: flex; justify-content: flex-end; align-items: flex-end;">
-				<img src="assets/banners/comm-banner-nekochan.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 100%;">
+				<video id="about-me-vid" controlslist="nofullscreen nodownload noremoteplayback" loop muted autoplay
+				disablepictureinpicture disableremoteplayback src="http://assets.raphaelneko.com/universe-i-feel-so-alive.mp4" type="video/mp4"
+				style="width: 100%; border-radius: 15px;">
+			</video>
 			</div>
 		</div>
 		<p>
@@ -237,6 +240,7 @@
 						var loader = document.getElementById("loader");
 						loader.classList.add("hidden");
 						AOS.init();
+						$('#about-me-vid').bind('contextmenu', function() {return false;});
 					});
 				});
 			}, 250);
