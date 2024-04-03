@@ -13,9 +13,10 @@ nav {
 nav .content {
 	/* mix-blend-mode: overlay; */
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	overflow: hidden;
+	flex-wrap: wrap;
 }
 
 nav .content a {
@@ -36,7 +37,10 @@ nav .content a.logo img {
 
 nav .content .links {
 	display: flex;
-	gap: 25px;
+	gap: 10px 25px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 nav .content .links a::after {

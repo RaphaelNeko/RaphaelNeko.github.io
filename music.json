@@ -95,10 +95,6 @@
 					"link": "https://music.amazon.co.jp/albums/B0CNHCQLG2"
 				},
 				{
-					"platform": "Bandcamp",
-					"link": "https://raphaelneko.bandcamp.com/album/universe-the-beginning"
-				},
-				{
 					"platform": "Deezer",
 					"link": "https://www.deezer.com/album/513608722"
 				}
@@ -141,10 +137,6 @@
 					"link": "https://www.amazon.com/Heartless/dp/B0CF3Y3QPV"
 				},
 				{
-					"platform": "Bandcamp",
-					"link": "https://raphaelneko.bandcamp.com/album/insecure"
-				},
-				{
 					"platform": "Deezer",
 					"link": "https://www.deezer.com/album/474169625"
 				}
@@ -172,10 +164,6 @@
 				{
 					"platform": "Amazon Music",
 					"link": "https://www.amazon.com/Little-Love/dp/B0CDCQ4NMH"
-				},
-				{
-					"platform": "Bandcamp",
-					"link": "https://raphaelneko.bandcamp.com/album/little-love"
 				},
 				{
 					"platform": "Deezer",
@@ -207,10 +195,6 @@
 					"link": "https://www.amazon.com/Waiting-You-Raphael-Neko/dp/B0CCTYP1TW"
 				},
 				{
-					"platform": "Bandcamp",
-					"link": "https://raphaelneko.bandcamp.com/album/waiting-for-you"
-				},
-				{
 					"platform": "Deezer",
 					"link": "https://www.deezer.com/album/468975675"
 				}
@@ -226,10 +210,6 @@
 				{
 					"platform": "Spotify",
 					"link": "https://open.spotify.com/album/1jqVXJ6xg2GgqGATpPwHCU"
-				},
-				{
-					"platform": "Bandcamp",
-					"link": "https://raphaelneko.bandcamp.com/album/neko"
 				}
 			]
 		},

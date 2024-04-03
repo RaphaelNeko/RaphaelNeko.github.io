@@ -70,6 +70,7 @@ button {
 	border-radius: 10px;
 	border: solid 2px #fff;
 	transition: all 250ms ease;
+	padding: 0 15px;
 }
 
 .cta-button:hover {
@@ -80,7 +81,7 @@ button {
 }
 
 .content {
-	max-width: 960px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 10px;
