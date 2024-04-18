@@ -1,6 +1,35 @@
 {
 	"releases": [
 		{
+			"title": "UNIVERSE 2 (The Afterbreak)",
+			"releasedate": "April 10",
+			"releaseyear": "2024",
+			"coverart": "https://i.scdn.co/image/ab67616d0000b273f56cdca5e2fcdf11facc8605",
+			"tracks": 12,
+			"links": [
+				{
+					"platform": "Spotify",
+					"link": "https://open.spotify.com/album/5PJeswfIka48VfPDPtuyn9"
+				},
+				{
+					"platform": "YouTube Music",
+					"link": "https://music.youtube.com/playlist?list=OLAK5uy_lIK18po3FaMHA8dMax6v1rofEG6h1xlEI&si=cfVlWmTbLwat1EZR"
+				},
+				{
+					"platform": "Apple Music",
+					"link": "https://music.apple.com/album/universe-2-the-afterbreak/1740691600"
+				},
+				{
+					"platform": "Amazon Music",
+					"link": "https://music.amazon.com/albums/B0D1FV7HC2"
+				},
+				{
+					"platform": "Deezer",
+					"link": "https://www.deezer.com/album/572745191"
+				}
+			]
+		},
+		{
 			"title": "What We Found",
 			"releasedate": "January 23",
 			"releaseyear": "2024",
