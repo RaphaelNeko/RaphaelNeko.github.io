@@ -1,0 +1,219 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #111;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+	font-size: 1rem;
+	font-family: 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+section.landing {
+	/* min-height: 100vh; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30vw 0 0;
+	background-image: url(../my-universe/assets/img/background-darker.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+section.landing p.title {
+	font-size: 10vw;
+	text-align: center;
+}
+
+section.landing p.title span {
+	font-weight: 900;
+	font-size: 15vw;
+	color: #111;
+	text-shadow: #fff 1px 0 0, #fff -1px 0 0, #fff 0 1px 0, #fff 0 -1px 0;
+}
+
+section.landing p.listen {
+	margin-top: 20vw;
+	padding: 2vw 5vw;
+	background-color: #fff;
+	color: #111;
+	border-radius: 3vw 3vw 0 0;
+	text-transform: uppercase;
+	font-size: 4.5vw;
+	font-weight: 500;
+}
+
+section.landing div.universe-part {
+	width: 100vw;
+	max-height: 29vw;
+	overflow: hidden;
+	transition: max-height 250ms ease-in-out;
+	z-index: 2;
+}
+
+section.landing div.universe-part.visible {
+	max-height: 77vw;
+}
+
+section.landing div.universe-part button {
+	width: 100%;
+	height: 29vw;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	font-size: 6vw;
+	font-weight: 900;
+	text-align: left;
+	padding-left: 8vw;
+}
+
+section.landing div.universe-part button span {
+	font-size: 4.5vw;
+	font-weight: 400;
+}
+
+section.landing div.universe-part button.btn-universe-1 {
+	background-image: url(../my-universe/assets/img/banner-universe1.jpg);
+}
+
+section.landing div.universe-part button.btn-universe-2 {
+	background-image: url(../my-universe/assets/img/banner-universe2.jpg);
+}
+
+section.landing div.universe-part button.btn-universe-3 {
+	background-image: url(../my-universe/assets/img/banner-universe3.jpg);
+}
+
+section.landing div.universe-part button.btn-universe-4 {
+	background-image: url(../my-universe/assets/img/banner-universe4.jpg);
+}
+
+section.landing div.universe-part p.soon {
+	font-size: 6vw;
+	text-align: center;
+	padding: 16vw 0;
+}
+
+section.landing div.universe-part div.streaming-platforms {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2vw;
+	padding: 5vw 2vw;
+	position: relative;
+	justify-content: center;
+}
+
+section.landing div.universe-part div.streaming-platforms img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(4vw) brightness(0.3);
+	z-index: -1;
+}
+
+section.landing div.universe-part div.streaming-platforms a,
+section.landing div.universe-part div.streaming-platforms p.more {
+	text-decoration: none;
+	padding: 3vw 4vw;
+	border-radius: 2vw;
+	background-color: #35353586;
+	color: #fff;
+	font-size: 4vw;
+}
+
+section.landing div.universe-part div.streaming-platforms i {
+	padding-right: 1.5vw;
+}
+
+section.landing div.universe-part div.streaming-platforms p.more {
+	color: #999;
+	font-weight: 100;
+	background-color: #2525254f;
+}
+
+section.keychains {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20vw 0;
+	background-image: url(../my-universe/assets/img/background-colored.jpg);
+	background-size: cover;
+	background-position: center;
+	gap: 5vw;
+}
+
+section.keychains p.title {
+	font-size: 10vw;
+	font-weight: 900;
+	line-height: 10vw;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10vw;
+	width: 70vw;
+}
+
+section.keychains div.keychain-render {
+	overflow: hidden;
+	border-radius: 4vw;
+}
+
+section.keychains div.keychain-render video {
+	display: block;
+	width: 100vw;
+}
+
+section.keychains p.render-sub {
+	font-size: 5vw;
+	text-align: center;
+}
+
+
+section.keychains a.buy {
+	font-size: 5vw;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #11111144;
+	padding: 4vw 6vw;
+	border-radius: 100vw;
+	border: 2px solid #fff;
+}
+
+
+section.keychains a.buy i {
+	padding-right: 2vw;
+}
+
+div.about {
+	margin-top: 5vw;
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+	width: 90vw;
+	background-color: #11111199;
+	border-radius: 4vw;
+	padding: 3vw 4vw;
+	font-size: 3.5vw;
+}
